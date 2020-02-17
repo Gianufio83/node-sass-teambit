@@ -40,6 +40,10 @@
   font-weight: bold;
 }
 
+.hamburger {
+  display: none;
+}
+
 nav {
   display: inline-block;
 }
@@ -51,10 +55,10 @@ ul {
 ul li {
   display: inline;
   padding: 0 10px;
-  text-decoration: none;
 }
 
 ul li a {
+  text-decoration: none;
   color: #58402c;
   cursor: pointer;
 }

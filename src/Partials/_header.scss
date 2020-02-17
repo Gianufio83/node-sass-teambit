@@ -36,6 +36,9 @@
   font-weight: bold;
 }
 }
+.hamburger {
+  display: none;
+}
 nav {
   display: inline-block;
 }
@@ -44,16 +47,15 @@ ul {
   li {
    display: inline;
    padding: 0 10px;
-   text-decoration: none;
-   // font-weight: normal;
-    a {
-      color: #58402c;
-      cursor: pointer;
-      &:hover {
-        color:blue;
-      }
-     }
-   }
+     a {
+       text-decoration: none;
+       color:$fontColor;
+       cursor: pointer;
+       &:hover{
+         color: blue;
+       }
+    }
+  }
 }
 
 @mixin button-design {

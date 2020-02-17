@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);.first-header {
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  line-height: 60px;
+}
+
+.first-header .container {
+  width: 85%;
+  height: 60px;
+  margin: 0 auto;
+  border-bottom: 1px solid grey;
+}
+
+.first-header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.left-side h1 {
+  font-size: 40.5px;
+  padding: 5px;
+}
+
+.right-side {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+
+.right-side .logo-title li {
+  font-weight: bold;
+}
+
+nav {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+ul li a {
+  color: #58402c;
+  cursor: pointer;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: lightblue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  line-height: 20px;
+}
+
+.bannerone {
+  width: 85%;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.bannerone:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-img {
+  width: 95%;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: inline;
+}
+
+a.blue-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 10px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+a.blue-button:hover {
+  background-color: #82b6db;
+}
+
+.mail-address {
+  margin-top: 10px;
+}
+
+.mail-address .mail {
+  color: #58402c;
+}
+
+.fas fa-arrow-right {
+  padding-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  color: #58402c;
+  font-size: 15px;
+  font-weight: bold;
+}
+

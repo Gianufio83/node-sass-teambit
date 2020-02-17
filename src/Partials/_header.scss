@@ -1,0 +1,119 @@
+.first-header {
+  height: 60px;
+  width: 100%;
+  background-color: $backgroundBody;
+  line-height: 60px;
+
+  .container {
+    width: $containerDimension;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+    &:after {
+      content:"";
+      display: table;
+      clear:both;
+    }
+  }
+}
+@mixin float {
+  float: left;
+  width: 50%;
+  height: 100%
+}
+.left-side {
+  @include float;
+    h1 {
+      font-size: $fontSizeH1;
+      padding: 5px;
+    }
+}
+.right-side {
+  @include float;
+  text-align: right;
+
+.logo-title li {
+  font-weight: bold;
+}
+}
+nav {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+  li {
+   display: inline;
+   padding: 0 10px;
+   text-decoration: none;
+   // font-weight: normal;
+    a {
+      color: #58402c;
+      cursor: pointer;
+      &:hover {
+        color:blue;
+      }
+     }
+   }
+}
+
+@mixin button-design {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: $buttonColor;
+  border: 1px solid blue;
+  border-radius: 10px;
+  line-height: 20px;
+}
+a.btn {
+  @include button-design;
+}
+.bannerone {
+  width: $containerDimension;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 60px;
+  &:after {
+    content:"";
+    display: table;
+    clear:both;
+  }
+}
+.header-img {
+  width: 95%;
+}
+p {
+  margin-top:  20px;
+  font-size: $fontSizeP;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: inline;
+}
+@mixin blue-button-design {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: $blueButton;
+  border: 1px solid blue;
+  border-radius: 10px;
+  line-height: 20px;
+  color:white;
+}
+a.blue-button {
+  @include blue-button-design;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(130, 182, 219);
+  }
+}
+.mail-address {
+  margin-top: 10px;
+  .mail {
+    color:$fontColor;
+  }
+
+}
+.fas fa-arrow-right {
+  padding-right: 10px;
+}

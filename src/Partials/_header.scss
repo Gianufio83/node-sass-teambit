@@ -16,6 +16,7 @@
     }
   }
 }
+
 @mixin float {
   float: left;
   width: 50%;
@@ -40,11 +41,12 @@ img {
   font-weight: bold;
 }
 }
-.hamburger {
+.menu  {
   display: none;
+  line-height: 20px;
 }
-nav {
-  display: inline-block;
+.navbar {
+  display: block;
 }
 ul {
   list-style: none;
@@ -56,13 +58,12 @@ ul {
        text-decoration: none;
        color:$fontColor;
        cursor: pointer;
-         &:hover {
-           color: blue;
-       }
     }
   }
 }
-
+a:hover {
+  color:blue;
+}
 @mixin button-design {
   display: inline-block;
   text-decoration: none;
@@ -124,4 +125,16 @@ a.blue-button {
 }
 .fas fa-arrow-right {
   padding-right: 10px;
+}
+.logo-btn {
+  vertical-align: text-bottom;
+
+}
+@media screen and (min-width:$breakSmall){
+  .menu .hamburger {
+    display:block;
+  }
+  // .navbar {
+  //   display:none;
+  // }
 }

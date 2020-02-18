@@ -3,8 +3,12 @@ $backgroundBody: white;
 $fontColor : #58402c;
 $fontDimension: 15px;
 $headerHeight: 70px;
-$buttonColor: lightblue;
+$buttonColor: white;
 $containerDimension: 85%;
 $fontSizeH1: $fontDimension * 2.7;
-$fontSizeP: $fontDimension * 1.4;
+$fontSizeP: $fontDimension * 1.6;
 $blueButton: blue;
+// mediaquery
+$breakSmall:767px;
+$backMain: rgb(240, 188, 239);
+$heightMain: 600px;

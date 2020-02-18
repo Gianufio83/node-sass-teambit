@@ -11,6 +11,51 @@ body {
   font-size: 15px;
 }
 
+.page-main {
+  background-color: #f0bcef;
+  height: 600px;
+}
+
+.container {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.container p {
+  text-align: center;
+  color: #58402c;
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.wrapper {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.wrapper .box {
+  justify-content: center;
+}
+
+.wrapper .box img {
+  width: 40%;
+}
+
+.center-img {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.center-img .img-under {
+  width: 20%;
+}
+
 .first-header {
   height: 70px;
   width: 100%;
@@ -57,12 +102,13 @@ img {
   font-weight: bold;
 }
 
-.hamburger {
+.menu {
   display: none;
+  line-height: 20px;
 }
 
-nav {
-  display: inline-block;
+.navbar {
+  display: block;
 }
 
 ul {
@@ -81,7 +127,7 @@ ul li a {
   cursor: pointer;
 }
 
-ul li a:hover {
+a:hover {
   color: blue;
 }
 
@@ -89,7 +135,7 @@ a.btn {
   display: inline-block;
   text-decoration: none;
   padding: 5px 10px;
-  background-color: lightblue;
+  background-color: white;
   border: 1px solid blue;
   border-radius: 10px;
   line-height: 20px;
@@ -114,7 +160,7 @@ a.btn {
 
 p {
   margin-top: 20px;
-  font-size: 21px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -149,5 +195,15 @@ a.blue-button:hover {
 
 .fas fa-arrow-right {
   padding-right: 10px;
+}
+
+.logo-btn {
+  vertical-align: text-bottom;
+}
+
+@media screen and (min-width: 767px) {
+  .menu .hamburger {
+    display: block;
+  }
 }
 

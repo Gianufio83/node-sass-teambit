@@ -8,5 +8,44 @@ font-family: $fontFamily;
 background-color: $backgroundBody;
 color: $fontColor;
 font-size: $fontDimension;
+}
+.page-main {
+  background-color: $backMain;
+  height: $heightMain;
 
+}
+@mixin write-container {
+  width: $containerDimension;
+  height: $headerHeight;
+  margin: 0 auto;
+}
+.container {
+  @include write-container;
+    p {
+      text-align: center;
+      color: $fontColor;
+      padding-top: 60px;
+      font-weight: bold;
+      font-size: $fontSizeP;
+  }
+}
+.wrapper {
+  @include write-container;
+  display:flex;
+  flex-direction: row;
+  padding-top: 30px;
+
+  .box {
+    justify-content: center;
+    img {
+      width: 40%;
+    }
+  }
+}
+.center-img {
+  text-align: center;
+  padding-top: 150px;
+  .img-under {
+    width: 20%;
+  }
 }

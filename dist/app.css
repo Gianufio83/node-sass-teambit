@@ -80,7 +80,7 @@ a.btn {
 
 .bannerone {
   width: 85%;
-  height: 450px;
+  height: 500px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -157,6 +157,10 @@ body {
   background-color: #f0bcef;
 }
 
+.second-page {
+  background-color: white;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -197,4 +201,15 @@ body {
 }
 .center-img .img-under {
   width: 20%;
+}
+
+.works {
+  font-weight: bold;
+}
+
+.text-align {
+  text-align: left;
+}
+.text-align .animal-photo {
+  height: 250px;
 }

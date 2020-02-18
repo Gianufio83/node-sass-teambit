@@ -11,8 +11,9 @@ font-size: $fontDimension;
 }
 .page-main {
   background-color: $backMain;
-
-
+}
+.second-page {
+  background-color: $backMainSecond;
 }
 @mixin write-container {
   width: $containerDimension;
@@ -54,5 +55,31 @@ font-size: $fontDimension;
   padding-top: 40px;
   .img-under {
     width: 20%;
+
+  }
+}
+.works {
+  font-weight: bold;
+}
+
+@mixin float-second {
+  float: left;
+  width: 50%;
+  height: 100%
+  text-align:left;
+}
+.right-side-new {
+  @include float-second
+}
+.learn {
+  margin-top: 10px;
+  .learn-more {
+    color:blue;
+  }
+.text-align {
+  text-align: left;
+  padding-top: 40px;
+  .animal-photo {
+    height: 250px;
   }
 }

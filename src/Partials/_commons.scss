@@ -22,7 +22,7 @@ body {
 .container {
   @include write-container;
   border-bottom: 1px solid grey;
-  text-align: center;
+  // text-align: center;
   color: $fontColor;
     h2 {
       padding-top: 60px;

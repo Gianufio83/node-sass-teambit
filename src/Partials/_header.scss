@@ -44,7 +44,10 @@ img {
 }
 .menu  {
   display: none;
-  line-height: 20px;
+  line-height: 70px;
+}
+.hamburger {
+  font-size: 20px;
 }
 .navbar {
   display: block;
@@ -60,10 +63,19 @@ ul {
        color:$fontColor;
        cursor: pointer;
     }
+    &:hover > a {
+      color:blue;
+    }
   }
 }
-a:hover {
-  color:blue;
+@media screen and (max-width:$breakSmall){
+  .menu  {
+    display:block;
+  }
+
+  .navbar {
+    display:none;
+  }
 }
 @mixin button-design {
   display: inline-block;
@@ -79,7 +91,7 @@ a.btn {
 }
 .bannerone {
   width: $containerDimension;
-  height: 500px;
+  // text-align: center;
   margin: 0 auto;
   padding-top: 60px;
   &:after {
@@ -87,6 +99,23 @@ a.btn {
     display: table;
     clear:both;
   }
+}
+@media screen and (max-width:$breakSmall){
+  .bannerone {
+    width: 100%;
+    .left-side,
+    .right-side,
+    .right-side-new {
+      width: 100%;
+    }
+  .right-side-new {
+    text-align: center;
+  }
+  .left-side {
+    text-align: center;
+  }
+  }
+
 }
 .header-img {
   width: 95%;
@@ -130,12 +159,4 @@ a.blue-button {
 .logo-btn {
   vertical-align: text-bottom;
 
-}
-@media screen and (min-width:$breakSmall){
-  .menu .hamburger {
-    display:block;
-  }
-  // .navbar {
-  //   display:none;
-  // }
 }

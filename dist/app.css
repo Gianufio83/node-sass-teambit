@@ -43,7 +43,11 @@ img {
 
 .menu {
   display: none;
-  line-height: 20px;
+  line-height: 70px;
+}
+
+.hamburger {
+  font-size: 20px;
 }
 
 .navbar {
@@ -63,11 +67,19 @@ ul li a {
   color: #58402c;
   cursor: pointer;
 }
-
-a:hover {
+ul li:hover > a {
   color: blue;
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
 a.btn {
   display: inline-block;
   text-decoration: none;
@@ -80,7 +92,6 @@ a.btn {
 
 .bannerone {
   width: 85%;
-  height: 500px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -90,6 +101,22 @@ a.btn {
   clear: both;
 }
 
+@media screen and (max-width: 767px) {
+  .bannerone {
+    width: 100%;
+  }
+  .bannerone .left-side,
+.bannerone .right-side,
+.bannerone .right-side-new {
+    width: 100%;
+  }
+  .bannerone .right-side-new {
+    text-align: center;
+  }
+  .bannerone .left-side {
+    text-align: center;
+  }
+}
 .header-img {
   width: 95%;
 }
@@ -135,11 +162,6 @@ a.blue-button:hover {
   vertical-align: text-bottom;
 }
 
-@media screen and (min-width: 767px) {
-  .menu .hamburger {
-    display: block;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -182,6 +204,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  text-align: center;
   padding-top: 30px;
 }
 .wrapper .box {
@@ -195,6 +218,11 @@ body {
   height: 150px;
 }
 
+@media screen and (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+}
 .center-img {
   text-align: center;
   padding-top: 40px;
@@ -207,9 +235,32 @@ body {
   font-weight: bold;
 }
 
+.right-side-new {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: left;
+}
+
+.learn {
+  margin-top: 10px;
+}
+.learn .learn-more {
+  color: blue;
+}
+
 .text-align {
   text-align: left;
+  padding-top: 40px;
 }
 .text-align .animal-photo {
   height: 250px;
+}
+
+.img-insight {
+  padding-top: 20px;
+  text-align: center;
+}
+.img-insight .insight {
+  width: 40%;
 }

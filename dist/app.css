@@ -1,5 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);.first-header {
-  height: 60px;
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: white;
+  color: #58402c;
+  font-size: 15px;
+}
+
+.first-header {
+  height: 70px;
   width: 100%;
   background-color: white;
   line-height: 60px;
@@ -7,7 +20,7 @@
 
 .first-header .container {
   width: 85%;
-  height: 60px;
+  height: 70px;
   margin: 0 auto;
   border-bottom: 1px solid grey;
 }
@@ -27,6 +40,10 @@
 .left-side h1 {
   font-size: 40.5px;
   padding: 5px;
+}
+
+img {
+  vertical-align: middle;
 }
 
 .right-side {
@@ -55,6 +72,7 @@ ul {
 ul li {
   display: inline;
   padding: 0 10px;
+  font-weight: bold;
 }
 
 ul li a {
@@ -107,6 +125,7 @@ p {
 a.blue-button {
   display: inline-block;
   text-decoration: none;
+  margin: 5px;
   padding: 5px 10px;
   background-color: blue;
   border: 1px solid blue;
@@ -130,19 +149,5 @@ a.blue-button:hover {
 
 .fas fa-arrow-right {
   padding-right: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: white;
-  color: #58402c;
-  font-size: 15px;
-  font-weight: bold;
 }
 

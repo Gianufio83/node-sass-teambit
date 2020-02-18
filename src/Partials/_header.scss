@@ -1,12 +1,12 @@
 .first-header {
-  height: 60px;
+  height: $headerHeight;
   width: 100%;
   background-color: $backgroundBody;
   line-height: 60px;
 
   .container {
     width: $containerDimension;
-    height: 60px;
+    height: $headerHeight;
     margin: 0 auto;
     border-bottom: 1px solid grey;
     &:after {
@@ -26,7 +26,11 @@
     h1 {
       font-size: $fontSizeH1;
       padding: 5px;
+
     }
+}
+img {
+  vertical-align: middle;
 }
 .right-side {
   @include float;
@@ -47,12 +51,13 @@ ul {
   li {
    display: inline;
    padding: 0 10px;
+   font-weight: bold;
      a {
        text-decoration: none;
        color:$fontColor;
        cursor: pointer;
-       &:hover{
-         color: blue;
+         &:hover {
+           color: blue;
        }
     }
   }
@@ -95,6 +100,7 @@ p {
 @mixin blue-button-design {
   display: inline-block;
   text-decoration: none;
+  margin: 5px;
   padding: 5px 10px;
   background-color: $blueButton;
   border: 1px solid blue;

@@ -80,6 +80,31 @@ ul li:hover > a {
     display: none;
   }
 }
+.relative {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  padding: 5px;
+  width: 80px;
+  background-color: white;
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.dropdown li {
+  text-align: left;
+  line-height: 20px;
+}
+
+.dropdown.active {
+  display: block;
+}
+
 a.btn {
   display: inline-block;
   text-decoration: none;
